@@ -5,10 +5,30 @@ export type Post = {
   date: string;
   summary: string;
   readingTime: string;
+  image?: string;
   content: string[];
 };
 
 export const posts: Post[] = [
+  {
+    slug: "building-my-first-api",
+    title: "What I Learned Building My First API",
+    category: "API Development",
+    date: "June 2026",
+    readingTime: "5 min read",
+    image: "/images/api-project.png",
+    summary:
+      "A reflection on learning how APIs connect the front end, backend, and database in real applications.",
+    content: [
+      "Recently, I started learning how to build an API using Node.js, Express, and MongoDB. At first, an API felt like another backend concept I needed to memorize, but once I began working with routes, requests, and database connections, the idea started to make more sense.",
+      "An API is the middle layer between the front end and the database. The front end is what the user sees, the database is where the information is stored, and the API is what allows both sides to communicate. That helped me understand why APIs are such an important part of full-stack development.",
+      "While building my API, I practiced creating routes for GET, POST, PUT, and DELETE requests. These routes allowed the application to view data, add new data, update existing data, and delete data. I also used tools like Postman to test my API before connecting it to a front end.",
+      "One of the biggest lessons I learned is that backend development is not just about writing code. It is about creating structure. A good API needs organized routes, clear models, useful error handling, and a database connection that works correctly.",
+      "This project helped me connect programming to real-world business tools. For example, a skincare business could use an API to manage client profiles, treatment plans, appointments, product recommendations, or follow-up notes. The React front end would let the user interact with the app, while the API would handle the data behind the scenes.",
+      "Building an API from scratch made full-stack development feel more real to me. I am still learning, but I now understand that APIs are not just technical pieces of a project. They are the bridge that allows an application to send, receive, organize, and remember information.",
+      "This assignment helped me see how the front end, backend, and database work together. It also gave me more confidence because I am learning how to build projects that are not only visual, but also functional and connected to real data."
+    ]
+  },
   {
     slug: "deploying-static-sites",
     title: "What I Learned About Deploying Static Sites",

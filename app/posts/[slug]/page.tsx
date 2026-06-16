@@ -38,9 +38,21 @@ export default async function PostPage({ params }: PostPageProps) {
 
         <h1 className="mb-4 text-4xl font-bold md:text-5xl">{post.title}</h1>
 
-        <p className="mb-8 text-neutral-400">
+        <p className="mb-4 text-neutral-400">
           {post.date} • {post.readingTime}
         </p>
+
+        <p className="mb-8 text-lg leading-8 text-neutral-300">
+          {post.summary}
+        </p>
+
+        {post.image && (
+          <img
+            src={post.image}
+            alt={post.title}
+            className="mb-10 h-auto w-full rounded-2xl border border-emerald-500/20 object-cover shadow-lg"
+          />
+        )}
 
         <div className="space-y-5 text-lg leading-8 text-neutral-300">
           {post.content.map((paragraph) => (
