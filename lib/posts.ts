@@ -88,6 +88,25 @@ export const posts: Post[] = [
       "Next.js also made me think more about reusable design. A strong layout can be used again and again, which saves time and keeps the site consistent. That is something I want to keep practicing because it connects to building cleaner, smarter, and more scalable projects.",
       "Overall, this assignment helped me move from only editing a homepage to understanding how pages, components, routes, data, and navigation work together. It gave me a better picture of how React and Next.js can be used to build real websites with structure and purpose."
     ]
+  },
+  {
+    slug: "learning-react-native-with-expo",
+    title: "What I Learned Starting React Native with Expo",
+    category: "React Native",
+    date: "June 2026",
+    readingTime: "5 min read",
+    image: "/images/react-native-expo.png",
+    summary:
+      "A reflection on learning how React Native and Expo connect web development skills to mobile app development.",
+    content: [
+      "This week I started learning more about React Native and Expo, and it made me look at development from a different angle. So far, most of my projects have focused on websites, APIs, databases, and deployment. React Native is exciting because it takes some of those same ideas and applies them to mobile apps.",
+      "One thing that stood out to me is that React Native still uses React concepts like components, props, state, and JSX, but the final result feels different because the goal is a mobile experience instead of a browser page. That helped me understand that the skills I am learning in web development can transfer into other areas of technology.",
+      "Expo made the idea of building a mobile app feel less intimidating. Instead of thinking I had to learn everything about Android and iOS development at once, Expo gives developers a way to start building, testing, and learning with a smoother setup. That matters to me because I learn better when I can actually see the project running and test changes as I build.",
+      "I also started thinking about how mobile apps connect to real business ideas. A spa or skincare business could use a mobile app for client profiles, treatment plans, service reminders, product recommendations, appointment updates, or aftercare instructions. That helped me connect React Native to something practical instead of only seeing it as another coding topic.",
+      "Another lesson I took from this is that development is not just one path. A React project can become a website, a dashboard, or even a mobile app depending on the tools being used. Learning React Native showed me that the same foundation can open up more possibilities.",
+      "I am still early in learning React Native, but it already helped me understand how web and mobile development can connect. It also reminded me that every new tool feels unfamiliar at first, but once I break it down into pieces, I can start seeing how it fits into the bigger picture.",
+      "Overall, React Native and Expo made me more interested in building applications that are not only useful on a website, but also accessible from a phone. That feels important because so many people use mobile apps every day, and I want to keep learning how to build tools that feel practical, modern, and real-world ready."
+    ]
   }
 ];
 
