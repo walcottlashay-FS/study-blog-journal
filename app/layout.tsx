@@ -28,7 +28,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main>{children}</main>
+
+        <footer className="mt-16 border-t border-gray-200 py-8 text-center text-sm text-gray-600">
+          <p>
+            Follow my web development journey on{" "}
+            <a
+              href="https://www.linkedin.com/in/lashay-walcott-641927224/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline"
+            >
+              LinkedIn
+            </a>
+            .
+          </p>
+        </footer>
       </body>
     </html>
   );
