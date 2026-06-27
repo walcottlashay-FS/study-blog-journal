@@ -11,6 +11,26 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "understanding-json-web-tokens",
+    title: "Understanding JSON Web Tokens",
+    category: "Authentication",
+    date: "June 2026",
+    readingTime: "4 min read",
+    image: "/images/json-web-token-auth.svg",
+    summary:
+      "A short explanation of how JSON Web Tokens help apps remember and verify logged-in users.",
+    content: [
+      "This week, I wanted to learn more about JSON Web Tokens, also called JWTs. Authentication can feel complicated at first because there are a lot of moving parts. A user logs in, the server checks the login information, and the app needs a secure way to remember that the user is allowed to access certain pages.",
+      "A JSON Web Token is one way to help with that process. After a user successfully logs in, the server can create a token and send it back to the front end. The front end can then send that token with future requests when the user tries to access protected information, such as a profile page, dashboard, or saved account details.",
+      "The token usually has three main parts: the header, the payload, and the signature. The header describes the token type, the payload holds basic information such as the user ID or role, and the signature helps prove that the token has not been changed. This structure helps the server decide if the request should be trusted.",
+      "One thing I learned is that a JWT is not the same thing as a password. A developer should never place private information like a password inside the token. The token is used for verification, but it still needs to be handled carefully because it represents access to parts of the application.",
+      "JWTs are helpful in full-stack applications because they connect the login process to protected routes. For example, a React front end can send a token to a Node and Express backend. The backend can check the token before allowing the user to view or change certain data.",
+      "This also helped me understand why authentication is more than just a login form. The form is only the beginning. The real flow includes checking the user, creating the token, storing it safely, sending it with requests, verifying it on the backend, and protecting routes that should not be open to everyone.",
+      "Overall, JSON Web Tokens helped me see authentication as a complete flow instead of one small feature. When used correctly, JWTs can make an app feel smoother for users while helping developers keep protected information more organized and secure."
+    ]
+  },
+  {
+    
     slug: "building-my-first-api",
     title: "What I Learned Building My First API",
     category: "API Development",
